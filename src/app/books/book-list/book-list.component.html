@@ -1,0 +1,23 @@
+<div class="container center-block">
+    <h1 class="text-center">Lista de Libros</h1>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Autor</th>
+                <th scope="col">Genero</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <th scope="row">{{ book.id }}</th>
+                <td>{{ book.titulo }}</td>
+                <td>{{ book.autor }}</td>
+                <td>{{ book.genero }}</td>
+                <td>{{ book.precio }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
